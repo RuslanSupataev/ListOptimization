@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Project Alpha",
+    "description": "An innovative project aimed at improving AI interaction.",
+    "image": "https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-1500x1000.jpg",
+    "author": "Jane Doe",
+    "date_created": "2024-07-01",
+    "category": "AI Development"
+  },
+  {
+    "title": "Project Beta",
+    "description": "A comprehensive study on climate change effects.",
+    "image": "https://i.natgeofe.com/k/6d6ee5ff-e749-47dd-80c2-ed1158aa259c/climatechange-polarbear_4x3.jpg",
+    "author": "John Smith",
+    "date_created": "2024-06-20",
+    "category": "Environmental Science"
+  },
+  {
+    "title": "Project Gamma",
+    "description": "Developing a new mobile app for social networking.",
+    "image": "https://cdn.thewirecutter.com/wp-content/media/2024/05/smartphone-2048px-1013.jpg?auto=webp&quality=75&crop=1.91:1&width=1200",
+    "author": "Alice Johnson",
+    "date_created": "2024-05-15",
+    "category": "Mobile Development"
+  },
+  {
+    "title": "Project Delta",
+    "description": "Exploring the use of blockchain in finance.",
+    "image": "https://blog.mlq.ai/content/images/2021/08/blockchain-basics.png",
+    "author": "Bob Brown",
+    "date_created": "2024-04-10",
+    "category": "Blockchain"
+  },
+  {
+    "title": "Project Epsilon",
+    "description": "Creating an educational platform for online learning.",
+    "image": "https://www.21kschool.com/vn/wp-content/uploads/sites/5/2022/09/How-Online-Education-is-Better-Than-Classroom-Education.jpg",
+    "author": "Carol White",
+    "date_created": "2024-03-05",
+    "category": "EdTech"
+  },
+  {
+    "title": "Project Zeta",
+    "description": "A research project focused on renewable energy solutions.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Photovoltaik_Dachanlage_Hannover_-_Schwarze_Heide_-_1_MW.jpg",
+    "author": "David Green",
+    "date_created": "2024-02-20",
+    "category": "Renewable Energy"
+  },
+  {
+    "title": "Project Eta",
+    "description": "Developing advanced robotics for industrial automation.",
+    "image": "https://www.therobotreport.com/wp-content/uploads/2023/06/sick-sponsored-featured-image-july2023-article1.jpg",
+    "author": "Emma Brown",
+    "date_created": "2024-01-15",
+    "category": "Robotics"
+  },
+  {
+    "title": "Project Theta",
+    "description": "A project to enhance cybersecurity measures in IoT devices.",
+    "image": "https://www.neit.edu/wp-content/uploads/2022/10/Cyber-Security-Icon-Concept-2-1.jpeg",
+    "author": "Frank Black",
+    "date_created": "2023-12-01",
+    "category": "Cybersecurity"
+  },
+  {
+    "title": "Project Iota",
+    "description": "Research on the impacts of artificial intelligence on healthcare.",
+    "image": "https://imageio.forbes.com/specials-images/imageserve/636063ae49e46108de0472a1/Medical-technology-concept--Remote-medicine--Electronic-medical-record-/960x0.jpg?format=jpg&width=960",
+    "author": "Grace Lee",
+    "date_created": "2023-11-10",
+    "category": "Healthcare AI"
+  },
+  {
+    "title": "Project Kappa",
+    "description": "An initiative to develop smart city infrastructure.",
+    "image": "https://smartcityconsultant.com/wp-content/uploads/2024/01/DALL%C2%B7E-2024-01-06-20.03.02-A-futuristic-cityscape-with-digital-and-sustainable-innovations-smart-technology-integrated-into-buildings-and-infrastructure-drones-flying-in-the-s.png",
+    "author": "Henry Adams",
+    "date_created": "2023-10-05",
+    "category": "Smart Cities"
+  }
+]
