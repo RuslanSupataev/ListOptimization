@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.flow
 
 open class BaseRepo {
-    protected fun <T> doRequest(block: suspend FlowCollector<Resource<T>>.() -> Unit) = flow {
+	protected fun <T> request(block: suspend FlowCollector<Resource<T>>.() -> Unit) = flow {
         try {
             block()
         } catch (e: Exception) {

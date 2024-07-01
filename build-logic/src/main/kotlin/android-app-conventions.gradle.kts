@@ -5,7 +5,12 @@ plugins {
     kotlin("android")
 }
 
-configure<BaseExtension> {}
+configure<BaseExtension> {
+	val libs = libs
+	plugins {
+		id(libs.plugKotlinxSerialization())
+	}
+}
 
 android {
     namespace = AndroidConfig.applicationId

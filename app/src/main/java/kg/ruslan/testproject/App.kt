@@ -1,6 +1,7 @@
 package kg.ruslan.testproject
 
 import android.app.Application
+import kg.ruslan.testproject.data.koinModuleData
 import kg.ruslan.testproject.domain.koinModuleDomain
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -20,6 +21,7 @@ class App : Application() {
 			// declare used modules
 			modules(
 				koinModuleDomain,
+				koinModuleData
 			)
 		}
 	}
