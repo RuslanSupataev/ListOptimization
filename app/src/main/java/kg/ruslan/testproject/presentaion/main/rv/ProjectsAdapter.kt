@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import kg.ruslan.testproject.databinding.ItemProjectBinding
 import kg.ruslan.testproject.domain.model.Project
+import kg.ruslan.testproject.utils.loadFromUrl
 
 typealias OnItemClickCallBack = (Project) -> Unit
 
@@ -46,7 +47,7 @@ class ProjectsAdapter : ListAdapter<Project, ProjectsAdapter.ProjectViewHolder>(
 				}
 				
 				tvTitle.text = project.title
-				// load image
+				ivImage.loadFromUrl(project.image)
 			}
 		}
 	}

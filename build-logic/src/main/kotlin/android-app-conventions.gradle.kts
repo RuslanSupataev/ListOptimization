@@ -57,4 +57,5 @@ kotlin {
 
 dependencies {
 	implementation(libs.libKoin())
+	implementation(libs.libGlide())
 }

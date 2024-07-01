@@ -17,7 +17,7 @@ class MainViewModel(
 		}
 	}
 	
-	private suspend fun fetchProjects() {
+	private suspend fun fetchProjects() = loadingOperation {
 		handleResourceInFlow(getProjectsUseCase.execute()) { data ->
 			_state.update {
 				it.copy(projects = data)

@@ -16,6 +16,7 @@ kotlin = "2.0.0"
 timber = "5.0.1"
 koin-version = "3.3.2"
 kotlinx-serialization = "1.7.1"
+glide = "4.16.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -35,6 +36,7 @@ timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 io-koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin_version" }
 io-koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin_version" }
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 
 
 [plugins]

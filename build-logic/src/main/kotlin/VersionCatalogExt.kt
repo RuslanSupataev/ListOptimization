@@ -31,6 +31,7 @@ internal fun VersionCatalog.plugKsp() = findPluginOrThrow("ksp")
 internal fun VersionCatalog.plugNavSafeArgs() = findPluginOrThrow("androidx-navigation-safeArgs")
 
 internal fun VersionCatalog.libKoin() = findLibraryOrThrow("io-koin-android")
+internal fun VersionCatalog.libGlide() = findLibraryOrThrow("glide")
 
 // – – –
 private fun VersionCatalog.findPluginOrThrow(name: String) = findPlugin(name).orElseThrow {

@@ -76,6 +76,29 @@ open class BaseStateViewModel<UIState : BaseUIState, UIIntents>(
 	protected open suspend fun handleIntent(intent: UIIntents) {}
 	
 	/**
+	 * End loading in the screen.
+	 */
+	private fun startLoading() {
+		_progressLV.postValue(true)
+	}
+	
+	/**
+	 * Start loading in the screen.
+	 */
+	private fun endLoading() {
+		_progressLV.postValue(false)
+	}
+	
+	/**
+	 * Make some operation covered by loading
+	 */
+	suspend fun loadingOperation(operation: suspend () -> Unit) {
+		startLoading()
+		operation()
+		endLoading()
+	}
+	
+	/**
 	 * [handleResourceInFlow] is a member function to observe [Flow] and process incoming data.
 	 *
 	 * @param resourceFlow is a [Flow] with some [Resource] type of [T]
@@ -93,22 +116,16 @@ open class BaseStateViewModel<UIState : BaseUIState, UIIntents>(
 	) {
 		resourceFlow.collect { resource ->
 			when (resource) {
-				is Resource.Loading -> {
-					_progressLV.postValue(true)
-					_state.update { it.also { it.isLoading = true } }
-				}
-				
+		
 				is Resource.Success -> {
 					emptySuccess?.invoke(Resource.Success(Any()))
 					success?.invoke(resource.data)
 					_progressLV.postValue(false)
-					_state.update { it.also { it.isLoading = false } }
 				}
 				
 				is Resource.Error -> {
-					_progressLV.postValue(false)
 					_state.update {
-						it.also { it.showError = resource.message; it.isLoading = false }
+						it.also { it.showError = resource.message }
 					}
 				}
 			}
