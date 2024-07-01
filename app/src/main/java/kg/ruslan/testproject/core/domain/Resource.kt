@@ -10,10 +10,6 @@ sealed class Resource<out T>(
     open val data: T? = null,
     open val message: String? = null,
 ) {
-    /**
-     * [Loading] intermediate value before get data or error
-     */
-    class Loading<T>(data: T? = null) : Resource<T>(data = data)
 
     /**
      * [Success] success response from data source
