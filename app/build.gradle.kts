@@ -1,5 +1,6 @@
 plugins {
 	id(Conventions.androidApp)
+	alias(libs.plugins.kotlin.android)
 }
 
 dependencies {
