@@ -9,5 +9,20 @@
         android:id="@+id/mainFragment"
         android:name="kg.ruslan.testproject.presentaion.main.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_projectDetailsFragment"
+            app:destination="@id/projectDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/projectDetailsFragment"
+        android:name="kg.ruslan.testproject.presentaion.details.ProjectDetailsFragment"
+        android:label="fragment_project_details"
+        tools:layout="@layout/fragment_project_details" >
+        <argument
+            android:name="projectTitle"
+            app:argType="string" />
+    </fragment>
+
 </navigation>

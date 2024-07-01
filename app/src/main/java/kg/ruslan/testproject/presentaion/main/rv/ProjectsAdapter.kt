@@ -36,7 +36,7 @@ class ProjectsAdapter : ListAdapter<Project, ProjectsAdapter.ProjectViewHolder>(
 		const val PROJECT_TYPE = 2333
 		
 		private val DiffUtilCallBack = object : DiffUtil.ItemCallback<Project>() {
-			override fun areItemsTheSame(oldItem: Project, newItem: Project) = oldItem.title == newItem.title
+			override fun areItemsTheSame(oldItem: Project, newItem: Project) = oldItem.hashCode() == newItem.hashCode()
 			override fun areContentsTheSame(oldItem: Project, newItem: Project) = oldItem == newItem
 		}
 	}

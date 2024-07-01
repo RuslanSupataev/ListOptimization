@@ -22,9 +22,9 @@ data class ProjectDto(
 ) : DataMapper<Project> {
 	
 	override fun toDomain() = Project(
-		author = author,
-		category = category,
-		dateCreated = dateCreated,
+		author = "Author: $author",
+		category = "Category: $category",
+		dateCreated = "Posted: $dateCreated",
 		description = description,
 		image = image,
 		title = title

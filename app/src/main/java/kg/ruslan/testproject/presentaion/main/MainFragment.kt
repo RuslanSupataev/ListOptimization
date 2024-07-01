@@ -1,5 +1,6 @@
 package kg.ruslan.testproject.presentaion.main
 
+import androidx.navigation.fragment.findNavController
 import kg.ruslan.testproject.core.presentation.BaseFragmentViewBindingState
 import kg.ruslan.testproject.databinding.FragmentMainBinding
 import kg.ruslan.testproject.presentaion.main.rv.ProjectsAdapter
@@ -55,7 +56,9 @@ class MainFragment : BaseFragmentViewBindingState<
 	
 	private fun callBacks() {
 		adapter.onItemClick {
-			// navigate to details screen
+			findNavController().navigate(
+				MainFragmentDirections.actionMainFragmentToProjectDetailsFragment(it.title)
+			)
 		}
 	}
 	

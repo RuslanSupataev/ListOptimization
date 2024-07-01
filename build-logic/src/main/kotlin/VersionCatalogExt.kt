@@ -28,7 +28,7 @@ internal fun VersionCatalog.plugKotlinxSerialization() = findPluginOrThrow("kotl
 internal fun VersionCatalog.plugKsp() = findPluginOrThrow("ksp")
 
 // Navigation
-internal fun VersionCatalog.plugNavSafeArgs() = findPluginOrThrow("androidx-navigation-safeArgs")
+internal fun VersionCatalog.plugNavSafeArgs() = findPluginOrThrow("safeArgs")
 
 internal fun VersionCatalog.libKoin() = findLibraryOrThrow("io-koin-android")
 internal fun VersionCatalog.libGlide() = findLibraryOrThrow("glide")
