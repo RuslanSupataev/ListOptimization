@@ -26,10 +26,15 @@ class ProjectsAdapter : ListAdapter<Project, ProjectsAdapter.ProjectViewHolder>(
 	}
 	
 	override fun onBindViewHolder(holder: ProjectViewHolder, position: Int) {
+		// making ui slower
+		Thread.sleep(50)
+		
 		holder.onBind(getItem(position))
 	}
 	
 	companion object {
+		const val PROJECT_TYPE = 2333
+		
 		private val DiffUtilCallBack = object : DiffUtil.ItemCallback<Project>() {
 			override fun areItemsTheSame(oldItem: Project, newItem: Project) = oldItem.title == newItem.title
 			override fun areContentsTheSame(oldItem: Project, newItem: Project) = oldItem == newItem

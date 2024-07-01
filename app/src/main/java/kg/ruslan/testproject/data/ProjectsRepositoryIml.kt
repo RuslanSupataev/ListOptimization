@@ -34,5 +34,10 @@ class ProjectsRepositoryIml(
 	private fun loadProjects() {
 		val data = assetsReader.readJSONFromAssets("data.json")
 		cachedProjects = Json.decodeFromString(data)
+		
+		// producing more items to slow down ui
+		repeat(3) {
+			cachedProjects = cachedProjects + cachedProjects
+		}
 	}
 }
