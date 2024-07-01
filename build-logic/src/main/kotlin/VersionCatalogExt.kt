@@ -30,10 +30,7 @@ internal fun VersionCatalog.plugKsp() = findPluginOrThrow("ksp")
 // Navigation
 internal fun VersionCatalog.plugNavSafeArgs() = findPluginOrThrow("androidx-navigation-safeArgs")
 
-// Hilt
-internal fun VersionCatalog.plugHiltAndroid() = findPluginOrThrow("hilt-android")
-internal fun VersionCatalog.libHiltAndroid() = findLibraryOrThrow("hilt-android")
-internal fun VersionCatalog.libHiltCompiler() = findLibraryOrThrow("hilt-compiler")
+internal fun VersionCatalog.libKoin() = findLibraryOrThrow("io-koin-android")
 
 // – – –
 private fun VersionCatalog.findPluginOrThrow(name: String) = findPlugin(name).orElseThrow {

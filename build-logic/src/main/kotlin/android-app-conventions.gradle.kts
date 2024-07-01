@@ -5,9 +5,7 @@ plugins {
     kotlin("android")
 }
 
-configure<BaseExtension> {
-    val libs = libs
-}
+configure<BaseExtension> {}
 
 android {
     namespace = AndroidConfig.applicationId
@@ -50,4 +48,8 @@ android {
 
 kotlin {
     jvmToolchain(LangOptions.jvmToolchain)
+}
+
+dependencies {
+	implementation(libs.libKoin())
 }
