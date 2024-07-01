@@ -13,6 +13,7 @@ lifecycle-viewmodel-ktx = "2.8.2"
 navigation-fragment-ktx = "2.7.7"
 navigation-ui-ktx = "2.7.7"
 kotlin = "2.0.0"
+timber = "5.0.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -28,6 +29,7 @@ navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fr
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-ui-ktx" }
 kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 androidGradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
