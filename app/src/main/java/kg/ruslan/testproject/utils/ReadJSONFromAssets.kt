@@ -9,7 +9,7 @@ fun readJSONFromAssets(context: Context, path: String): String {
     val identifier = "[ReadJSON]"
 	
     try {
-        val file = context.assets.open(path)
+		val file = context.assets.open(path)
 	    Timber.tag(identifier).i("Found File: $file.")
         val bufferedReader = BufferedReader(InputStreamReader(file))
         val stringBuilder = StringBuilder()
